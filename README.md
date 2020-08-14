@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 # Damage Assessment of Carr Fire to Santa Rosa Residential Buildings
 #### CNN-based predictions from Sentinel(?) Satellie Images
 
 <div style="text-align:center"><img src="plots/NASA-satellite-image-header.png" /></div>
 
 Carr fire (July 23rd-30th) in Santa Rosa, CA [[Source for satellite image]](https://www.nasa.gov/image-feature/goddard/2018/nasa-satellite-shows-california-shrouded-in-smoke)
+=======
+# Damage Assessment of the Carr Fire to Santa Rosa Residential Building Fires
+## CNN-based predictions from Sentinel(?) Satellie Images
+
+<div style="text-align:center"><img src="plots/NASA-satellite-image-header.png" /></div>
+
+Carr Fire between July23rd-30th in Santa Rosa, CA [[Source for image]](https://www.nasa.gov/image-feature/goddard/2018/nasa-satellite-shows-california-shrouded-in-smoke)
+>>>>>>> origin
 
 
 <br>
@@ -28,6 +37,7 @@ project-global_warming_NLP
     
 |__ assets/
 |__ codes/
+<<<<<<< HEAD
 |  |__P02_Data_Cleaning_Imageview.ipynb
 |  |__P03_modeling.ipynb
 |__ datasets/
@@ -36,6 +46,10 @@ project-global_warming_NLP
 |     |__images/
 |     |__labels/
 |     |__targets/
+=======
+|  |__ P01_API_requests.ipynb  
+|__ datasets/
+>>>>>>> origin
 |__ plots/
 |__ Executive_slides_satellie_CNN.pdf
 |__ README.md
