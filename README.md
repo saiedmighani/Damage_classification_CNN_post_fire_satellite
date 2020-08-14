@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-# Damage Assessment of Carr Fire to Santa Rosa Residential Buildings
-#### CNN-based predictions from Sentinel(?) Satellie Images
+# Damage Assessment of Tubbs Fire to Santa Rosa Residential Buildings
+#### CNN-based predictions from Sentinel(?) Satellite Images
 
 <div style="text-align:center"><img src="plots/NASA-satellite-image-header.png" /></div>
 
-Carr fire (July 23rd-30th) in Santa Rosa, CA [[Source for satellite image]](https://www.nasa.gov/image-feature/goddard/2018/nasa-satellite-shows-california-shrouded-in-smoke)
+#### Carr fire (July 23rd-30th) in Santa Rosa, CA [[Source for satellite image]](https://www.nasa.gov/image-feature/goddard/2018/nasa-satellite-shows-california-shrouded-in-smoke)
 =======
-# Damage Assessment of the Carr Fire to Santa Rosa Residential Building Fires
-## CNN-based predictions from Sentinel(?) Satellie Images
-
-<div style="text-align:center"><img src="plots/NASA-satellite-image-header.png" /></div>
 
 Carr Fire between July23rd-30th in Santa Rosa, CA [[Source for image]](https://www.nasa.gov/image-feature/goddard/2018/nasa-satellite-shows-california-shrouded-in-smoke)
 >>>>>>> origin
@@ -19,13 +14,17 @@ Carr Fire between July23rd-30th in Santa Rosa, CA [[Source for image]](https://w
 
 - ### Project Goal
 
-Between July 23rd-30th, 2018, [Carr](https://www.latimes.com/projects/la-me-carr-fire-map/) fire ignited and spread over the Santa Rosa county in California, USA. It resulted in destruction of nearly 1,500 houses, and killing six people. The damage was enormous. We decided to look into the damages to the houses through satellite imagery techniques, to assess the level of damage.
+The Tubbs Fire was a wildfire in Northern California during October 2017. At the time, the Tubbs Fire was the most destructive wildfire in California history, [https://en.wikipedia.org/wiki/Tubbs_Fire] burning parts of Napa, Sonoma, and Lake counties, inflicting its greatest losses in the city of Santa Rosa The damage was enormous. 
+
+When a fire starts to spread, quick and accurate situational information is critical to an effective response. Before responders can act in the affected area, they need to know the location, cause and severity of damage. But disasters can strike anywhere, disrupting local communication and transportation infrastructure, making the process of assessing specific local damage difficult, dangerous, and slow. [https://www.challenge.gov/challenge/diu-xview2-assessing-building-damage/]
+
+Therefore, our goal is to create a predictive model that automates the damage assessment of high resolution satelite images to accelerate recovery from natural disasters.
 
 <br>
 
 - ### Problem statement
 ---
-CAn we train a model that will look at the differnetial (pre/post) satellite image and discern the damage extent?
+Can we train a model that will look at the differnetial (pre/post) satellite image and discern the damage extent?
 
 ---
 
