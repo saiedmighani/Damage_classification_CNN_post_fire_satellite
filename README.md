@@ -1,22 +1,24 @@
 # Building Damage Assessment of Tubbs Fire in Santa Rosa, CA
----
+
 Authors: Saied Mighani, Anna Bukareva, Brendan Chan
 
 <div style="text-align:center"><img src="plots/NASA-satellite-image-header.png" /></div>
 
+---
 ### Problem Statement
 
 The Tubbs Fire was a wildfire in Northern California during October 2017. At the time, the Tubbs Fire was the most destructive wildfire in California history, [https://en.wikipedia.org/wiki/Tubbs_Fire] burning parts of Napa, Sonoma, and Lake counties, inflicting its greatest losses in the city of Santa Rosa The damage was enormous. 
 
 When a fire starts to spread, quick and accurate situational information is critical to an effective response. Before responders can act in the affected area, they need to know the location, cause and severity of damage. But disasters can strike anywhere, disrupting local communication and transportation infrastructure, making the process of assessing specific local damage difficult, dangerous, and slow. [https://www.challenge.gov/challenge/diu-xview2-assessing-building-damage/]
 
-### Project Goal
 ---
+### Project Goal
+
 Our goal is to help the Humanitarian Assistance & Disaster Recovery (HADR) automate the damage assessment by comparing pre-disaster and post-disaster of high resolution satellite images to accelerate recovery effects for natural disasters like fires.
 
 ---
 ### Data Preparation
----
+
 The import, data process, as well as modeling and visualizatons were all performed in Python. In order to perform image analysis and processing for this project, convolutional neural network (CNN) models were used. They work phenomenally well on computer vision tasks like image classification, object detection, image recognition, etc.
 
 The project directory is structured as follows:
@@ -51,7 +53,7 @@ project-global_warming_NLP
 
 ---
 ### Model Training and Results
----
+
 We split the labeled (destroyed versus no-damage) houses into train/validation and test datasets. Then, selected a pre-trained CNN model and trained it further using our train/validation dataset. Eventually, we predicted the target lables for the test dataset (see Figure below)
 [Figure for predictions]
 
@@ -59,7 +61,7 @@ As figure shows, all the labeles were correctly predicted. Hence, the mode accur
 
 ---
 ### Next Steps and Further Improvements
----
+
 If we had more time to work on this project, one significant improvement we can make to the model is to add some granularity to the classification. The current classifier only classifies buildings as either having no damage or being completely destroyed. Obviously, there are cases in between where the buildings are only partially damaged. Given more time, we would add additionally classifications to indicate the level of damage e.g. a number classification system where 0 is undamaged and 5 is completely destroyed. All the numbers in between would simply specify the level of damage. 
 
 Another thing we could work on is to gather more data and train our own neural networks for both object detection and classification. This wouldn't necessarily improve the efficacy of the code, but it would give us a greater insight into the inner workings of convolutional neural networks.
