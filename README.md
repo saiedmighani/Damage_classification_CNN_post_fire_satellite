@@ -76,3 +76,8 @@ Another thing we could work on is to gather more data and train our own neural n
 Additionally, we could extend the model to other natural disasters, which may or may not require us to train our own CNN model. The model works remarkably well so far on buildings damaged by fires. I would imagine that we could also extend it to damage caused by floods or earthquakes. Perhaps even train a classifier that can distinguish the different types of damage. 
 
 Finally, a convenient thing to have would be a code that takes in housing data in order to predict the cost of the damages. 
+
+---
+### Instructions for Running Code
+
+Run notebooks P02_Data_Cleaning_Imageview.ipynb and P03_modelin_cnn.ipynb within the “codes” folder to use our model to generate and view predications in real time.
