@@ -80,4 +80,4 @@ Finally, a convenient thing to have would be a code that takes in housing data i
 ---
 ### Instructions for Running Code
 
-Run notebooks P02_Data_Cleaning_Imageview.ipynb and P03_modelin_cnn.ipynb within the “codes” folder to use our model to generate and view predications in real time.
+Run notebooks P02_Data_Cleaning_Imageview.ipynb and P03_modelin_cnn.ipynb within the “codes” folder to use our model to generate and view predictions in real time.
