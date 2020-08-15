@@ -44,18 +44,25 @@ project-global_warming_NLP
 |__ Executive_slides_satellie_CNN.pdf
 |__ README.md
 ```
-
+---
 - Using data gathered by SpaceNet satellite images and pre-trained baseline localization and classification models, pre/post images are inputted, our model assesses the building damage by using various computer vision techniques, and lastly predicts output PNG images for damage.
 - Input images are square RGB image files in PNG format, with height and width of 1024 pixels. Pre/post pairs are identified by matching numerical IDs for each set of pre/post filenames.
 - Image Detection, Localization, and Classification: The localization model properly identifies and locates buildings within the image. This model is based on a SpaceNet2 submission by Motoki Kimura, which features an altered U-Net architecture. The baseline classification model classifies the damage of the buildings before and after the Tubbs fire and is pre-trained ResNet50 on ImageNet. The baseline model has a precision score of 0.87 for no damage and 0.5 for destroyed classification.
 - Labels and Annotations: Polygons were annotated and damage scores were labeled on the training set for each building by these baseline models.
 - Image Segmentation -- Generate Masks: A pixelated mask for each object was outputted providing an exact outline of the objects within the image from json files. The main target for our image segmentation was the building bodies.
+---
+<div style="text-align:center"><img src="plots/a_medium_fig01.png" /></div>
+Figure 1. An example for the detected house mask polygons overlaid on top of the post-fire satellite image<br>
 
 ---
 ### Model Training and Results
 
-We split the labeled (destroyed versus no-damage) houses into train/validation and test datasets. Then, selected a pre-trained CNN model and trained it further using our train/validation dataset. Eventually, we predicted the target lables for the test dataset (see Figure below)
-[Figure for predictions]
+We split the labeled (destroyed versus no-damage) houses into train/validation and test datasets. Then, selected a pre-trained CNN model and trained it further using our train/validation dataset. Eventually, we predicted the target lables for the test dataset (see Figure 2)
+<div style="text-align:center"><img src="plots/a_medium_fig02.png" /></div>
+
+Figure 2. Target label predictions of the trained model on test dataset (accuracy: 100%)
+
+---
 
 As figure shows, all the labeles were correctly predicted. Hence, the mode accuracy was 1. Although, it seems like a perfect model, there is one drawback in our variance assessment. Our test dataset was selected from the same image set as train, so we might have had some leakage from training to test. As a future attempt, we will test the model on a completely new dataset for a better assessment of model overfit behavior.
 
