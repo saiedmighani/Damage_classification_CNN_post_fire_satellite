@@ -27,23 +27,26 @@ project-global_warming_NLP
     
 |__ assets/
 |__ codes/
-<<<<<<< HEAD
-|  |__P02_Data_Cleaning_Imageview.ipynb
-|  |__P03_modeling.ipynb
+|  |P02_Data_Cleaning_Imageview.ipynb
+|  |P03_modelin_cnn.ipynb
 |__ datasets/
 |  |__train/
-|  |__test/ 
-|     |__images/
+|     |__images///
 |     |__labels/
 |     |__targets/
-=======
-|  |__ P01_API_requests.ipynb  
+|  |__test/ 
+|     |__images///
+|     |__labels/
+|     |__targets/
 |__ datasets/
->>>>>>> origin
 |__ plots/
-|__ Executive_slides_satellie_CNN.pdf
+|__ Executive_summary_slides.pdf
 |__ README.md
 ```
+---
+### - *Instructions for running and reproducing the model results
+After cloning the repository, run the notebooks (under "codes/" directory) with the sequence that is laid out in the above project directory table. The figures will be automatically saved into "plots/" directory.
+
 ---
 - Using data gathered by SpaceNet satellite images and pre-trained baseline localization and classification models, pre/post images are inputted, our model assesses the building damage by using various computer vision techniques, and lastly predicts output PNG images for damage.
 - Input images are square RGB image files in PNG format, with height and width of 1024 pixels. Pre/post pairs are identified by matching numerical IDs for each set of pre/post filenames.
@@ -78,6 +81,4 @@ Additionally, we could extend the model to other natural disasters, which may or
 Finally, a convenient thing to have would be a code that takes in housing data in order to predict the cost of the damages. 
 
 ---
-### Instructions for Running Code
 
-Run notebooks P02_Data_Cleaning_Imageview.ipynb and P03_modelin_cnn.ipynb within the “codes” folder to use our model to generate and view predictions in real time.
